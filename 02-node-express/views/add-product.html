@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>添加产品</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/product.css">
+  </head>
+  <body>
+    <header class="shop-header">
+      <nav class="shop-nav">
+        <ul class="shop-list">
+          <li class="shop-list-item"><a href="/" class="active">商店</a></li>
+          <li class="shop-list-item"><a href="/admin/add-product">添加产品</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form class="product-form" action="/admin/product" method="post">
+        <div class="form-control">
+          <label for="title">标题</label>
+          <input type="text" name="title" id="title" />
+        </div>
+        <button type="submit">添加产品</button>
+      </form>
+    </main>
+  </body>
+</html>
